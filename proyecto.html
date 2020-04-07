@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitrochez</title> 
+    <title>Vitrochez</title>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script>
+        $(document).ready(function(){
+
+            function navDropDowns()
+{
+    $("#main-nav > li").hover(
+            function ()
+            {
+                var ww = $(window).width();
+                if (ww > 640) $(this).find(".nav-list").show();
+            },
+            function ()
+            {
+                $(this).find(".nav-list").hide();
+            }
+        );
+    $('.nav-title').click(function ()
+    {
+        var ww = $(window).width();
+        if (ww > 640)
+        {
+            $(this).next().toggle();
+            return false;
+        }
+    });
+}
+
+ });
+    </script>
 </head>
 <body>
-    <header>
+    <header> 
         <h1>ViTrochez</h1> 
         <div>Iconos</div> 
         <div>Contacto</div>
@@ -16,22 +46,33 @@
     <div> 
         <ul >
             <li>
-              <a class="active" href="#">Inicio</a>
+              <a href="#">Inicio</a>
             </li>
-            <li>
-              <a href="joyeria.html">Joyeria</a>
-            </li>
-            <li>
-              <a href="cosmeticos.html">Cosmeticos</a>
-            </li>
-            <li>
-                <a href="vitrales.html">Vidrio</a>
-              </li>
-              <li>
-                <a href="cursos.html">Cursos</a>
-              </li>
-          </ul>
-    </div>
+            <button class="dropbtn" onmouseover="(event, 'Joyeria')">
+                <li>
+                    <a href="joyeria.html">Joyeria</a>
+                  </li>
+            </button>
+            <button class="dropbtn"  onmouseover="openTab(event, 'Cosmeticos')">
+                <li>
+                    <a href="cosmeticos.html">Cosmeticos</a>
+                  </li>
+            </button>
+            <button class="dropbtn"  onmouseover="openTab(event, 'Vitrales')">
+                <li>
+                    <a href="vitrales.html">Vidrio</a>
+                  </li>
+            </button>
+             <button class="dropbtn"  onmouseover="openTab(event, 'Cursos')">
+                <li>
+                    <a href="cursos.html">Cursos</a>
+                  </li>
+             </button>
+          </ul> 
+         </div>  
+
+    
+        
     <section><!--slider?--></section> 
     <div>
         <!--mas info-->
@@ -39,7 +80,9 @@
     <section>
         <!--fotos, puede ser con bootstrap-->
     </section> 
-    <footer></footer>
+    <footer></footer> 
+    
+      
 
 
 
