@@ -8,69 +8,56 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script>
-        $(document).ready(function(){
-
-            function navDropDowns()
-{
-    $("#main-nav > li").hover(
-            function ()
-            {
-                var ww = $(window).width();
-                if (ww > 640) $(this).find(".nav-list").show();
-            },
-            function ()
-            {
-                $(this).find(".nav-list").hide();
-            }
-        );
-    $('.nav-title').click(function ()
-    {
-        var ww = $(window).width();
-        if (ww > 640)
-        {
-            $(this).next().toggle();
-            return false;
-        }
-    });
-}
-
- });
-    </script>
-</head>
-<body>
+    </head>
+    <body>
     <header> 
         <h1>ViTrochez</h1> 
         <div>Iconos</div> 
         <div>Contacto</div>
     </header> 
-    <div> 
-        <ul >
+        <ul id="menu">
             <li>
               <a href="#">Inicio</a>
             </li>
-            <button class="dropbtn" onmouseover="(event, 'Joyeria')">
-                <li>
-                    <a href="joyeria.html">Joyeria</a>
+            
+                <li  class="dropbtn">
+                    <a href="joyeria.html">Joyeria</a> 
+                   
+                        <ul class="dropdown">
+                            <li><p class="pi">Piezas de producción limitada y exclusiva con metales y piezas semi-preciosas.</p></li>
+                        </ul>
                   </li>
-            </button>
-            <button class="dropbtn"  onmouseover="openTab(event, 'Cosmeticos')">
-                <li>
+           
+                <li  class="dropbtn">
                     <a href="cosmeticos.html">Cosmeticos</a>
+                        <ul class="dropdown">
+                            <li><p class="pi">Productos naturales,<br> veganos y nutritivos para hidratar la piel.</p></li>
+                        </ul>
+                     
                   </li>
-            </button>
-            <button class="dropbtn"  onmouseover="openTab(event, 'Vitrales')">
-                <li>
+            
+           
+                <li  class="dropbtn">
                     <a href="vitrales.html">Vidrio</a>
+                   
+                        <ul class="dropdown">
+                            <li><p class="pi">Obras artísticas funcionales para el hogar. Únicas y exclusivas.</p></li>
+                        </ul>
                   </li>
-            </button>
-             <button class="dropbtn"  onmouseover="openTab(event, 'Cursos')">
-                <li>
+            
+            
+                <li  class="dropbtn">
                     <a href="cursos.html">Cursos</a>
+                   
+                        <ul class="dropdown">
+                            <li><p class="pi">Personalizados con <br> préstamo de herramientas y materiales disponibles para estudiantes.</p></li>
+                        </ul> 
                   </li>
-             </button>
-          </ul> 
-         </div>  
+             
+          </ul>  
+         
+    
+
 
     
         
