@@ -67,6 +67,7 @@ li a {
   width: 1136px;
   height: 100%;
   padding: 5px 7px;
+  margin-left: 150px;
 }
 
 ul li:hover ul.dropdown{
@@ -74,4 +75,62 @@ ul li:hover ul.dropdown{
 }
 ul li ul.dropdown li{
   display: block;
+}
+.ghj{
+  background-color: #9e000f;  
+  background-color: #f0bfc2; 
+  background-color: #878962; 
+  background-color: #e4dcd1; 
+  background-color: #772222;
+}
+.img{
+  justify-content: center; 
+  margin-bottom: 0px;
+} 
+.header1{
+  height: 80px;
+  width: 100%;
+  background-color: #9e000f;
+  margin: auto; 
+  
+}
+.h{
+  font-family: 'Libre Baskerville', serif;
+  color: white; 
+  text-align: center;
+  padding-top: 10px;
+}
+.img{
+  margin-top: -50px;
+}
+.icon{
+border-radius: 50%;
+
+}
+.icon:hover{
+  box-shadow: 0 0 2px 1px #e4dcd1;
+}
+.cont{
+  float: right; 
+  margin-top: -40px; 
+  margin-right: 10px;
+  
+}
+.cont:hover{
+  color: white;
+  cursor: pointer;
+}
+.carousel{
+  padding: 5px;
+  padding-top: 10px;
+}
+.info-box{
+  height: 500px;
+  width: 1100px; 
+  background-color: #878962;
+  display: flex;
+  z-index: 10;
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 125px;
 }
