@@ -21,49 +21,61 @@
         </div> 
         <div class="cont"><i class="large material-icons">call</i>+985446</div>
     </header> 
-         <nav role="navigation">
-          <ul>
-            <li>
-              <a href="#">Inicio</a>
+
+
+      
+  <div> <!--Navbar-->
+        <nav class=" navbar navbar-expand-md navbar-light" role="navigation">
+
+          <!--hamburguesa-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive";><span class="navbar-toggler-icon";">
+          </span></button><!--fin de la hamburguesa-->
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Inicio</a>
             </li>
             
-                <li>
-                    <a href="joyeria.html">Joyeria</a> 
+                <li class="nav-item">
+                    <a class="nav-link" href="joyeria/joyeria.html">Joyeria</a> 
                    
-                        <ul>
+                        <ul class=" d-none d-md-block ">
                             <li class="li1"><p class="pi">Piezas de producción limitada y exclusiva con metales y piezas semi-preciosas.</p></li>
                         </ul>
                   </li>
            
-                <li>
-                    <a href="cosmeticos.html">Cosmeticos</a>
-                        <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="cosmeticos/cosmeticos.html">Cosmeticos</a>
+                        <ul class=" d-none d-md-block ">
                             <li class="li1"><p class="pi">Productos naturales,<br> veganos y nutritivos para hidratar la piel.</p></li>
                         </ul>
                      
                   </li>
             
            
-                <li>
-                    <a href="vitrales.html">Vidrio</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="vidrio/vidrio.html">Vidrio</a>
                    
-                        <ul>
+                        <ul class=" d-none d-md-block ">
                             <li class="li1"><p class="pi">Obras artísticas funcionales para el hogar. Únicas y exclusivas.</p></li>
                         </ul>
                   </li>
             
             
-                <li>
-                    <a href="cursos.html">Cursos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="cursos/cursos.html">Cursos</a>
                    
-                        <ul>
+                        <ul class=" d-none d-md-block ">
                             <li class="li1"><p class="pi">Personalizados con <br> préstamo de herramientas y materiales disponibles para estudiantes.</p></li>
                         </ul> 
                   </li>
              
           </ul>  
+        </div>
         </nav>
-         
+    </div><!--Fin del navbar-->
+
+
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -85,6 +97,85 @@
               </div>
          <section class="info-box"></section>
     
+
+
+    <!--  Articulos -->
+    <div class="container" id="descArticulos" style="margin-top: 25em;">
+      <article class="row"> <!---Foto de articulos, descripcion-->
+          
+          <section class="col-xs-12 col-md-6 col-lg-4">
+              <img src="Imagenes/Imagen ejemplo.jpg" alt="">
+              <h3>Articulo</h3>
+              <p>Descripcion del articulo</p>
+          </section>
+          <section class="col-xs-12 col-md-6 col-lg-4">
+              <img src="Imagenes/Imagen ejemplo.jpg" alt="">
+              <h3>Articulo</h3>
+              <p>Descripcion del articulo</p>
+          </section>
+          <section class="col-xs-12 col-md-6 col-lg-4">
+              <img src="Imagenes/Imagen ejemplo.jpg" alt="">
+              <h3>Articulo</h3>
+              <p>Descripcion del articulo</p>
+          </section>
+          <section class="col-xs-12 col-md-6 col-lg-4">
+              <img src="Imagenes/Imagen ejemplo.jpg" alt="">
+              <h3>Articulo</h3>
+              <p>Descripcion del articulo</p>
+          </section>
+          <section class="col-xs-12 col-md-6 col-lg-4">
+              <img src="Imagenes/Imagen ejemplo.jpg" alt="">
+              <h3>Articulo</h3>
+              <p>Descripcion del articulo</p>
+          </section>
+          <section class="col-xs-12 col-md-6 col-lg-4">
+              <img src="Imagenes/Imagen ejemplo.jpg" alt="">
+              <h3>Articulo</h3>
+              <p>Descripcion del articulo</p>
+          </section>
+         
+          
+      </article> 
+    </div>
+    <!--  FIN de Articulos -->
+  
+  
+  
+  <!--  Footer-->
+  <footer>
+      <div class="footercss" >
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3 col-sm-6 col-xs-12 fSegmentoUno">
+                      <h2>Links</h2>
+                      <li><a href="#">Inicio</a></li>
+                      <li><a href="joyeria/joyeria.html">Joyeria</a></li>
+                      <li><a href="cosmeticos/cosmeticos.html">Cosmeticos</a></li>
+                      <li><a href="vidrio/vidrio.html">Vidrio</a></li>
+                      <li><a href="cursos/cursos.html">Cursos</a></li>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12 fSegmentoDos">
+                      
+                     
+                      
+                      <h2>Texto</h2>
+                      <p>Algun Texto descriptivo de la empresa</p>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12 fSegmentoTres">
+                      <h2>Redes sociales</h2>
+                      <p>No olvides seguirnos en nuestras redes sociales para mantenerte al tanto</p>
+                      <a href="#">Logo Facebook</a>
+                      <a href="#">Logo Instagram</a>
+  
+                  </div>
+          </div>
+          </div>
+      </div>
+   </footer> 
+   <!-- Fin de Footer-->
+  
+
+
 
 
 

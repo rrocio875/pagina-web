@@ -15,11 +15,12 @@ li a {
     text-decoration: none; 
     width: 140px; 
     height: 40px; 
+    font-weight: 700;
     
   }
   li a:hover:not(.active) {
     background-color: #772222; 
-    color: white; 
+    color: white !important; 
     text-decoration: none; 
     margin-left: 3px; 
     margin-right: 3px;
@@ -27,17 +28,17 @@ li a {
   
   .active {
     background-color: #772222;  
-    color: white;
+    color: white !important; 
   } 
   li a:hover.active{
-      color: white; 
+      color: white !important; 
       text-decoration: none;
   }
   
  li {  
     position: relative;
   display: inline-block; 
-  transition-duration: 0.5s;
+  /*transition-duration: 0.5s;*/
     
   } 
   .li1{
@@ -57,7 +58,7 @@ li a {
     width: 250px;
     height: 100px;
     visibility: hidden;
-    transition: all 0.5s ease;
+    /*transition: all 0.5s ease;*/
 }
 
 
@@ -130,4 +131,48 @@ border-radius: 50%;
   position: absolute;
   margin-top: -100px;
   margin-left: 125px;
+}
+
+
+
+
+/* FOOTER*/
+footer p{
+  color: #999;
+  line-height: 25px;
+}
+footer h2,h3{
+  color: #fff;
+}
+footer h2{
+  font-size: 32px;
+  color: #fff;
+  letter-spacing: 3px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+footer{
+  background: rgb(34, 34, 34);
+  padding: 80px 0;
+}
+
+.fSegmentoUno{
+  color: #fff;
+
+  margin: 10px;
+}
+.fSegmentoDos{
+  margin: 10px;
+}
+.fSegmentoTres{
+
+  margin: 10px;
+}
+
+footer a{
+  color: #999;
+}
+footer li{
+  list-style-type: none;
 }
