@@ -7,7 +7,7 @@ margin-left: 200px;
 padding: 0;
 position: relative;
 } 
-li a {
+.menuComp li a {
     display: flex;
     color:black;
     text-align: center;
@@ -18,7 +18,7 @@ li a {
     font-weight: 700;
     
   }
-  li a:hover:not(.active) {
+  .menuComp li a:hover:not(.active) {
     background-color: #772222; 
     color: white !important; 
     text-decoration: none; 
@@ -35,7 +35,7 @@ li a {
       text-decoration: none;
   }
   
- li {  
+  .menuComp li {  
     position: relative;
   display: inline-block; 
   /*transition-duration: 0.5s;*/
@@ -175,4 +175,9 @@ footer a{
 }
 footer li{
   list-style-type: none;
+}
+
+footer a:hover{
+  color: #fff;
+  text-decoration: none;
 }
