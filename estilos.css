@@ -123,14 +123,14 @@ border-radius: 50%;
   padding-top: 10px;
 }
 .info-box{
-  height: 500px;
-  width: 1100px; 
+  height: 60%;
+  width: 80%; 
   background-color: #878962;
-  display: flex;
+  /*display: flex;*/
   z-index: 10;
   position: absolute;
   margin-top: -100px;
-  margin-left: 125px;
+  /*margin-left: 4%;*/
 }
 
 
